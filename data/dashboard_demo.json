@@ -3782,7 +3782,8 @@
       "amount": 125.0,
       "status": "ACTIVE",
       "rate_daily": 0.00025,
-      "period_days": 30
+      "period_days": 30,
+      "remaining_label": "21d 04h"
     },
     {
       "id": "DEMO-POS-000002",
@@ -3792,7 +3793,8 @@
       "amount": 210.0,
       "status": "ACTIVE",
       "rate_daily": 0.00027,
-      "period_days": 60
+      "period_days": 60,
+      "remaining_label": "47d 16h"
     },
     {
       "id": "DEMO-POS-000003",
@@ -3802,7 +3804,8 @@
       "amount": 180.0,
       "status": "ACTIVE",
       "rate_daily": 0.00022,
-      "period_days": 14
+      "period_days": 14,
+      "remaining_label": "09d 08h"
     }
   ],
   "active_offers": [

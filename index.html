@@ -40,9 +40,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <div class="heading-row"><div><h1>Funding operations</h1><p>Lifecycle-aware monitoring for automated margin funding.</p></div><div class="asof">LAST SNAPSHOT<br><b>09 Oct 2026 · 09:07:26 TST</b></div></div>
       <div class="metric-grid">
         <div class="metric"><div class="label">Wallet total</div><div class="metric-value" id="metricWallet">$249.03</div><div class="metric-sub">USD funding wallet</div></div>
-        <div class="metric"><div class="label">Active funding</div><div class="metric-value blue" id="metricActive">$249.02</div><div class="metric-sub">1 active position</div></div>
+        <div class="metric"><div class="label">Active funding</div><div class="metric-value blue" id="metricActive">$249.02</div><div class="metric-sub" id="metricActiveSub">multiple active positions</div></div>
         <div class="metric"><div class="label">Net APR</div><div class="metric-value up" id="metricApr">8.50%</div><div class="metric-sub">platform fee included</div></div>
-        <div class="metric"><div class="label">Remaining</div><div class="metric-value amber" id="metricRemaining">118d 19h</div><div class="metric-sub">estimated lifecycle window</div></div>
+        <div class="metric"><div class="label">Remaining</div><div class="metric-value amber" id="metricRemaining">MULTIPLE</div><div class="metric-sub" id="metricRemainingSub">individual lifecycles below</div></div>
       </div>
       <div class="panel history-coverage"><div class="panel-head"><span class="panel-title">Historical coverage</span><span class="panel-note" id="historySource">CONNECTED · 2026-10-09</span></div><div class="panel-body allocation"><div><div class="alloc-row"><span class="alloc-label">USD trades / credits</span><span class="alloc-value" id="usdCoverage">326 / 322</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT trades / credits</span><span class="alloc-value" id="ustCoverage">194 / 192</span></div></div><div><div class="alloc-row"><span class="alloc-label">USD ledger entries</span><span class="alloc-value" id="usdLedger">234</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT ledger entries</span><span class="alloc-value" id="ustLedger">105</span></div></div></div></div><div style="height:20px"></div>
       <div class="section-grid">
@@ -118,13 +118,16 @@ function renderActivePositions(d){
   const total=detailAvailable?positions.reduce((sum,p)=>sum+Number(p.amount||0),0):Number((d.snapshots?.USD?.at(-1)||{}).credits_out||0);
   const activeMetric=document.querySelector('#metricActive');
   if(activeMetric)activeMetric.textContent='$'+fmt(total);
-  const activeSub=document.querySelector('#metricActive')?.nextElementSibling;
+  const activeSub=document.querySelector('#metricActiveSub');
   if(activeSub)activeSub.textContent=detailAvailable?positions.length+' active position'+(positions.length===1?'':'s'):'active detail unavailable';
+  const remaining=document.querySelector('#metricRemaining');
+  const remainingSub=document.querySelector('#metricRemainingSub');
+  if(remaining){if(!detailAvailable){remaining.textContent='—';if(remainingSub)remainingSub.textContent='individual lifecycle detail unavailable';}else if(positions.length===1){remaining.textContent=positions[0].remaining_label||'—';if(remainingSub)remainingSub.textContent='individual lifecycle';}else{remaining.textContent='MULTIPLE';if(remainingSub)remainingSub.textContent=positions.length+' individual lifecycles below';}}
   const count=document.querySelector('#positionsCount');
   if(count)count.textContent=detailAvailable?(positions.length+' POSITION'+(positions.length===1?'':'S')):'DETAIL UNAVAILABLE';
-  const rows=positions.map(p=>'<tr><td>'+esc(p.asset)+' / '+esc(p.symbol)+'</td><td class="num">$'+fmt(p.amount)+'</td><td class="num">'+esc(p.period_days??'—')+' days</td><td class="num">'+rate(p)+'</td><td class="num up">'+rate(p)+'</td><td class="num">'+date(p.created_ms)+'</td><td class="num amber">—</td><td><span class="tag">'+esc(p.status||'ACTIVE')+'</span></td></tr>').join('');
+  const rows=positions.map(p=>'<tr><td>'+esc(p.asset)+' / '+esc(p.symbol)+'</td><td class="num">$'+fmt(p.amount)+'</td><td class="num">'+esc(p.period_days??'—')+' days</td><td class="num">'+rate(p)+'</td><td class="num up">'+rate(p)+'</td><td class="num">'+date(p.created_ms)+'</td><td class="num amber">'+esc(p.remaining_label||'—')+'</td><td><span class="tag">'+esc(p.status||'ACTIVE')+'</span></td></tr>').join('');
   const body=document.querySelector('#activePositionsBody'); if(body)body.innerHTML=detailAvailable?(rows||'<tr><td colspan="8">No active funding credits</td></tr>'):'<tr><td colspan="8">Current aggregate is available, but individual active credit details are unavailable.</td></tr>';
-  const overviewRows=positions.map(p=>'<tr><td>'+esc(p.asset)+' / '+esc(p.symbol)+'</td><td class="num">$'+fmt(p.amount)+'</td><td class="num">'+esc(p.period_days??'—')+' days</td><td class="num up">'+rate(p)+'</td><td class="num amber">—</td><td><span class="source">'+esc(p.id)+'</span></td></tr>').join('');
+  const overviewRows=positions.map(p=>'<tr><td>'+esc(p.asset)+' / '+esc(p.symbol)+'</td><td class="num">$'+fmt(p.amount)+'</td><td class="num">'+esc(p.period_days??'—')+' days</td><td class="num up">'+rate(p)+'</td><td class="num amber">'+esc(p.remaining_label||'—')+'</td><td><span class="source">'+esc(p.id)+'</span></td></tr>').join('');
   const overview=document.querySelector('#overviewPositionsBody'); if(overview)overview.innerHTML=detailAvailable?(overviewRows||'<tr><td colspan="6">No active funding credits</td></tr>'):'<tr><td colspan="6">Individual active credit details unavailable.</td></tr>';
   const offerPanel=document.querySelector('#positions .panel:nth-of-type(2) .panel-note'); if(offerPanel)offerPanel.textContent=offersAvailable?(offers.length+' ACTIVE'):'DETAIL UNAVAILABLE';
   const offerBody=document.querySelector('#positions .panel:nth-of-type(2) .panel-body'); if(offerBody)offerBody.textContent=!offersAvailable?'Individual open-offer details unavailable.':(offers.length?offers.length+' open funding offer'+(offers.length===1?'':'s')+' · $'+fmt(offers.reduce((sum,p)=>sum+Number(p.amount||0),0)):'No unfilled funding offers in the current snapshot.');
