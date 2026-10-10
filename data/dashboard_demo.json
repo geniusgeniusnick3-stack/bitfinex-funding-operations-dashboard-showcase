@@ -3772,5 +3772,49 @@
       "tag": "SUBMIT_ENTER",
       "level": "WARNING"
     }
+  ],
+  "active_positions": [
+    {
+      "id": "DEMO-POS-000001",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "credit",
+      "amount": 125.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00025,
+      "period_days": 30
+    },
+    {
+      "id": "DEMO-POS-000002",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "credit",
+      "amount": 210.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00027,
+      "period_days": 60
+    },
+    {
+      "id": "DEMO-POS-000003",
+      "asset": "USDT",
+      "symbol": "fUST",
+      "kind": "credit",
+      "amount": 180.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00022,
+      "period_days": 14
+    }
+  ],
+  "active_offers": [
+    {
+      "id": "DEMO-OFFER-000001",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "offer",
+      "amount": 75.0,
+      "status": "OPEN",
+      "rate_daily": 0.00024,
+      "period_days": 30
+    }
   ]
 }
