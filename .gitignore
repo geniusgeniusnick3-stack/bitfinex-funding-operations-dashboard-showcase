@@ -1,0 +1,9 @@
+# Public showcase only; never commit private dashboard artifacts.
+private_bitfinex_history_raw.json
+private_history_normalized.json
+*.db
+*.sqlite3
+.env
+*.key
+*.pem
+.DS_Store
