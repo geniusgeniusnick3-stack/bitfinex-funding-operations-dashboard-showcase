@@ -13,6 +13,10 @@ A read-only showcase of a funding-operations dashboard for portfolio and lifecyc
 - Read-only, multilingual dashboard UI
 - Clear separation between current funding state and persisted lifecycle records
 
+## Why Bitfinex
+
+Bitfinex provides a peer-to-peer Funding market. This dashboard focuses on making the separate funding states easy to read: wallet balance, open offers, and active funding credits.
+
 ## Data and safety boundaries
 
 The public showcase intentionally does **not** include:
@@ -71,6 +75,10 @@ This repository is for interface and operations-visibility demonstration only. I
 - 事件紀錄與系統健康狀態
 - 唯讀、多語言儀表板介面
 - 區分交易所目前 funding segment 與保存下來的放貸生命週期紀錄
+
+## 為什麼是 Bitfinex
+
+Bitfinex 有提供 P2P Funding 放貸市場。這個儀表板把錢包餘額、未成交掛單與有效放貸分開呈現，讓目前資金狀態比較容易閱讀。
 
 ## 資料與安全邊界
 
