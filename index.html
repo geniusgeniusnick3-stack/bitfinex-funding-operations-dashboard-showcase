@@ -143,7 +143,7 @@ function renderActivePositions(d){
   const overview=document.querySelector('#overviewPositionsBody'); if(overview)overview.innerHTML=detailAvailable?(overviewRows||'<tr><td colspan="6">No active funding credits</td></tr>'):'<tr><td colspan="6">Individual active credit details unavailable.</td></tr>';
   // Capital allocation 用同一份資料算，避免各區數字對不上
   const _wallet=Number((((d.snapshots||{}).USD||[]).slice(-1)[0]||{}).wallet_balance||0);
-  const _cred=Number(total||0);
+  const _cred=Number(totalUsd||0);   // Capital allocation 標題是 USD / FUSD，只算 USD
   const _off=offersAvailable?_sum(usdOff):0;
   const _cash=Math.max(0,_wallet-_cred-_off);
   const _util=_wallet>0?(_cred+_off)/_wallet*100:0;
