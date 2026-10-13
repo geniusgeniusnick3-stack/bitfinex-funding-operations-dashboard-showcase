@@ -45,10 +45,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <div class="panel history-coverage"><div class="panel-head"><span class="panel-title">Historical coverage</span><span class="panel-note" id="historySource">CONNECTED · 2026-10-09</span></div><div class="panel-body allocation"><div><div class="alloc-row"><span class="alloc-label">USD trades / credits</span><span class="alloc-value" id="usdCoverage">326 / 322</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT trades / credits</span><span class="alloc-value" id="ustCoverage">194 / 192</span></div></div><div><div class="alloc-row"><span class="alloc-label">USD ledger entries</span><span class="alloc-value" id="usdLedger">234</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT ledger entries</span><span class="alloc-value" id="ustLedger">105</span></div></div></div></div><div style="height:20px"></div>
       <div class="section-grid">
         <div class="panel"><div class="panel-head"><span class="panel-title">Capital allocation</span><span class="panel-note">USD / FUSD</span></div><div class="panel-body allocation">
-          <div><div class="alloc-row"><span class="alloc-label">Active funding</span><span class="alloc-value">$249.02</span></div><div class="bar"><i class="green" style="width:99.99%"></i></div></div>
-          <div><div class="alloc-row"><span class="alloc-label">Available cash</span><span class="alloc-value">$0.01</span></div><div class="bar"><i style="width:2%"></i></div></div>
-          <div><div class="alloc-row"><span class="alloc-label">Open offers</span><span class="alloc-value">$0.00</span></div><div class="bar"><i style="width:0%"></i></div></div>
-          <div><div class="alloc-row"><span class="alloc-label">Utilization</span><span class="alloc-value up">99.99%</span></div><div class="bar"><i class="green" style="width:99.99%"></i></div></div>
+          <div><div class="alloc-row"><span class="alloc-label">Active funding</span><span class="alloc-value" id="allocActive">—</span></div><div class="bar"><i class="green" style="width:0%"></i></div></div>
+          <div><div class="alloc-row"><span class="alloc-label">Available cash</span><span class="alloc-value" id="allocCash">—</span></div><div class="bar"><i style="width:0%"></i></div></div>
+          <div><div class="alloc-row"><span class="alloc-label">Open offers</span><span class="alloc-value" id="allocOffers">—</span></div><div class="bar"><i style="width:0%"></i></div></div>
+          <div><div class="alloc-row"><span class="alloc-label">Utilization</span><span class="alloc-value up" id="allocUtil">—</span></div><div class="bar"><i class="green" style="width:0%"></i></div></div>
         </div></div>
         <div class="panel"><div class="panel-head"><span class="panel-title">System health</span><span class="panel-note">RECONCILED</span></div><div class="panel-body health-list">
           <div class="health"><div><div class="health-name">USD funding service</div><div class="health-desc">Service health · demo heartbeat 12s ago</div></div><span class="status">ONLINE</span></div>
@@ -131,6 +131,17 @@ function renderActivePositions(d){
   const body=document.querySelector('#activePositionsBody'); if(body)body.innerHTML=detailAvailable?(rows||'<tr><td colspan="8">No active funding credits</td></tr>'):'<tr><td colspan="8">Current aggregate is available, but individual active credit details are unavailable.</td></tr>';
   const overviewRows=positions.map(p=>'<tr><td>'+esc(p.asset)+' / '+esc(p.symbol)+'</td><td class="num">$'+fmt(p.amount)+'</td><td class="num">'+esc(p.period_days??'—')+' days</td><td class="num up">'+rate(p)+'</td><td class="num amber">'+esc(p.remaining_label||'—')+'</td><td><span class="source">'+esc(p.id)+'</span></td></tr>').join('');
   const overview=document.querySelector('#overviewPositionsBody'); if(overview)overview.innerHTML=detailAvailable?(overviewRows||'<tr><td colspan="6">No active funding credits</td></tr>'):'<tr><td colspan="6">Individual active credit details unavailable.</td></tr>';
+  // Capital allocation 用同一份資料算，避免各區數字對不上
+  const _wallet=Number((((d.snapshots||{}).USD||[]).slice(-1)[0]||{}).wallet_balance||0);
+  const _cred=Number(total||0);
+  const _off=offersAvailable?offers.reduce((s,x)=>s+Number(x.amount||0),0):0;
+  const _cash=Math.max(0,_wallet-_cred-_off);
+  const _util=_wallet>0?(_cred+_off)/_wallet*100:0;
+  const _setAlloc=(id,txt,pct)=>{const el=document.querySelector(id);if(!el)return;el.textContent=txt;const row=el.closest('.alloc-row');const bar=row&&row.parentElement.querySelector('.bar i');if(bar)bar.style.width=Math.max(0,Math.min(100,pct))+'%';};
+  _setAlloc('#allocActive','$'+fmt(_cred),(_cred/_wallet)*100);
+  _setAlloc('#allocCash','$'+Number(_cash).toFixed(2),(_cash/_wallet)*100);
+  _setAlloc('#allocOffers','$'+fmt(_off),(_off/_wallet)*100);
+  _setAlloc('#allocUtil',_util.toFixed(2)+'%',_util);
   const offerPanel=document.querySelector('#positions .panel:nth-of-type(2) .panel-note'); if(offerPanel)offerPanel.textContent=offersAvailable?(offers.length+' ACTIVE'):'DETAIL UNAVAILABLE';
   const offerBody=document.querySelector('#positions .panel:nth-of-type(2) .panel-body'); if(offerBody)offerBody.textContent=!offersAvailable?'Individual open-offer details unavailable.':(offers.length?offers.length+' open funding offer'+(offers.length===1?'':'s')+' · $'+fmt(offers.reduce((sum,p)=>sum+Number(p.amount||0),0)):'No unfilled funding offers in the current snapshot.');
 }
