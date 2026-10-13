@@ -1942,6 +1942,30 @@
         "available_cash": 13.5,
         "credits_out": 988.85,
         "funding_symbol": "FUSD"
+      },
+      {
+        "date": "2026-08-16",
+        "ts_ms": 1786838400000,
+        "wallet_balance": 1004.7,
+        "available_cash": 14.25,
+        "credits_out": 990.45,
+        "funding_symbol": "FUSD"
+      },
+      {
+        "date": "2026-08-17",
+        "ts_ms": 1786924800000,
+        "wallet_balance": 1007.05,
+        "available_cash": 12.0,
+        "credits_out": 995.05,
+        "funding_symbol": "FUSD"
+      },
+      {
+        "date": "2026-08-18",
+        "ts_ms": 1787011200000,
+        "wallet_balance": 1009.4,
+        "available_cash": 12.75,
+        "credits_out": 996.65,
+        "funding_symbol": "FUSD"
       }
     ],
     "USDT": [
@@ -3051,6 +3075,53 @@
       }
     ]
   },
+  "active_positions": [
+    {
+      "id": "DEMO-POS-000001",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "credit",
+      "amount": 380.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00025,
+      "period_days": 30,
+      "remaining_label": "21d 04h"
+    },
+    {
+      "id": "DEMO-POS-000002",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "credit",
+      "amount": 320.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00027,
+      "period_days": 60,
+      "remaining_label": "47d 16h"
+    },
+    {
+      "id": "DEMO-POS-000003",
+      "asset": "USDT",
+      "symbol": "fUST",
+      "kind": "credit",
+      "amount": 200.0,
+      "status": "ACTIVE",
+      "rate_daily": 0.00022,
+      "period_days": 14,
+      "remaining_label": "09d 08h"
+    }
+  ],
+  "active_offers": [
+    {
+      "id": "DEMO-OFFER-000001",
+      "asset": "USD",
+      "symbol": "fUSD",
+      "kind": "offer",
+      "amount": 96.65,
+      "status": "OPEN",
+      "rate_daily": 0.00024,
+      "period_days": 30
+    }
+  ],
   "events": [
     {
       "timestamp_local": "2026-10-08 04:53:18,664",
@@ -3173,651 +3244,604 @@
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-09 23:55:39,094",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:55:20,478",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:55:20,478",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:55:20,185",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:55:19,701",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:55:18,960",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-09 23:50:41,146",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,146",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,146",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,145",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,138",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,138",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:41,138",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:40,619",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:40,127",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:50:39,900",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,161",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,160",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,160",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,160",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,144",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,144",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:41,144",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:40,636",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:40,143",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:45:39,907",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:40:39,110",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:50:20,493",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-09 23:35:41,094",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:50:20,485",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:35:41,094",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:50:20,485",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:35:41,094",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,093",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,072",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,072",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:41,071",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:40,566",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:50:20,187",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:35:40,064",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:35:39,839",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:50:19,700",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:45:18,976",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:45:18,963",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:40:20,530",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:40:20,530",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,685",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,679",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,679",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,678",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:41,168",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:40:20,233",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:30:40,692",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:30:40,303",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:40:19,720",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:40:18,963",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:35:20,667",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:35:20,641",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:35:20,641",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,578",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,577",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,571",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,571",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,570",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:41,111",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:35:20,316",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:25:40,459",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:25:40,233",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:35:19,791",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:30:18,967",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:30:18,966",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:25:20,578",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:25:20,578",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,092",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,085",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "FUNDS",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,085",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DEFICIT",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:41,085",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "DECISION",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:40,567",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:25:20,284",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:20:40,073",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "LONG_TERM",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-09 23:20:39,846",
-      "source": "usd__2026-10-10_00-00-00.log",
+      "timestamp_local": "2026-10-12 23:25:19,796",
+      "source": "usd__2026-10-13_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:20:18,968",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:15:20,491",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:15:20,490",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
+      "timestamp_local": "2026-10-12 23:15:20,203",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:15:19,734",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:10:18,968",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:05:20,485",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_PLAN",
+      "timestamp_local": "2026-10-12 23:05:20,484",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_SKIP",
+      "timestamp_local": "2026-10-12 23:05:20,213",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-09 23:15:41,105",
-      "source": "usd__2026-10-10_00-00-00.log",
-      "tag": "SUBMIT_ENTER",
+      "timestamp_local": "2026-10-12 23:05:19,731",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
       "level": "WARNING"
-    }
-  ],
-  "active_positions": [
-    {
-      "id": "DEMO-POS-000001",
-      "asset": "USD",
-      "symbol": "fUSD",
-      "kind": "credit",
-      "amount": 125.0,
-      "status": "ACTIVE",
-      "rate_daily": 0.00025,
-      "period_days": 30,
-      "remaining_label": "21d 04h"
     },
     {
-      "id": "DEMO-POS-000002",
-      "asset": "USD",
-      "symbol": "fUSD",
-      "kind": "credit",
-      "amount": 210.0,
-      "status": "ACTIVE",
-      "rate_daily": 0.00027,
-      "period_days": 60,
-      "remaining_label": "47d 16h"
+      "timestamp_local": "2026-10-12 23:00:20,516",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
     },
     {
-      "id": "DEMO-POS-000003",
-      "asset": "USDT",
-      "symbol": "fUST",
-      "kind": "credit",
-      "amount": 180.0,
-      "status": "ACTIVE",
-      "rate_daily": 0.00022,
-      "period_days": 14,
-      "remaining_label": "09d 08h"
-    }
-  ],
-  "active_offers": [
+      "timestamp_local": "2026-10-12 23:00:20,515",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
     {
-      "id": "DEMO-OFFER-000001",
-      "asset": "USD",
-      "symbol": "fUSD",
-      "kind": "offer",
-      "amount": 75.0,
-      "status": "OPEN",
-      "rate_daily": 0.00024,
-      "period_days": 30
+      "timestamp_local": "2026-10-12 23:00:20,236",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 23:00:19,745",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:55:20,489",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:55:20,489",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:55:20,206",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:55:19,730",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:50:18,984",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:45:20,869",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:45:20,869",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:45:20,584",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:45:19,745",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:40:20,919",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:40:20,918",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:40:20,444",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:40:19,776",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:35:20,580",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:35:20,580",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:35:20,284",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:35:19,807",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:30:20,482",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:30:20,482",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:30:20,196",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:30:19,704",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:25:20,606",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:25:20,606",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:25:20,305",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:25:19,755",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:20:18,973",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:15:21,106",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:15:21,106",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:15:20,264",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:15:19,781",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:10:20,911",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:10:20,910",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:10:20,614",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:10:20,137",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:05:18,992",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "GATE",
+      "level": "INFO"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:00:21,148",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:00:21,148",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:00:20,662",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 22:00:20,179",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:55:20,600",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:55:20,600",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:55:20,313",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:55:19,825",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:50:20,939",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:50:20,939",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:50:20,657",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:50:20,151",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:45:20,564",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:45:20,564",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:45:20,271",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:45:19,766",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:40:20,861",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:40:20,861",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:40:20,583",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:40:20,101",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:35:20,557",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:35:20,557",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-12 21:35:20,249",
+      "source": "usd__2026-10-13_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
     }
   ]
 }
