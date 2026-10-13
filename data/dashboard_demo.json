@@ -3103,7 +3103,7 @@
       "asset": "USDT",
       "symbol": "fUST",
       "kind": "credit",
-      "amount": 200.0,
+      "amount": 611.95,
       "status": "ACTIVE",
       "rate_daily": 0.00022,
       "period_days": 14,
@@ -3116,7 +3116,7 @@
       "asset": "USD",
       "symbol": "fUSD",
       "kind": "offer",
-      "amount": 96.65,
+      "amount": 296.65,
       "status": "OPEN",
       "rate_daily": 0.00024,
       "period_days": 30

@@ -39,7 +39,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <section class="view active" id="overview">
       <div class="heading-row"><div><h1>Funding operations</h1><p>Lifecycle-aware monitoring for automated margin funding.</p></div><div class="asof">LAST SNAPSHOT<br><b>09 Oct 2026 · 09:07:26 TST</b></div></div>
       <div class="metric-grid">
-        <div class="metric"><div class="label">Wallet total</div><div class="metric-value" id="metricWallet">$249.03</div><div class="metric-sub">USD funding wallet</div></div>
+        <div class="metric"><div class="label">Wallet total</div><div class="metric-value" id="metricWallet">$249.03</div><div class="metric-sub" id="metricWalletSub">USD funding wallet</div></div>
         <div class="metric"><div class="label">Active funding</div><div class="metric-value blue" id="metricActive">$249.02</div><div class="metric-sub" id="metricActiveSub">3 active positions</div></div>
       </div>
       <div class="panel history-coverage"><div class="panel-head"><span class="panel-title">Historical coverage</span><span class="panel-note" id="historySource">CONNECTED · 2026-10-09</span></div><div class="panel-body allocation"><div><div class="alloc-row"><span class="alloc-label">USD trades / credits</span><span class="alloc-value" id="usdCoverage">326 / 322</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT trades / credits</span><span class="alloc-value" id="ustCoverage">194 / 192</span></div></div><div><div class="alloc-row"><span class="alloc-label">USD ledger entries</span><span class="alloc-value" id="usdLedger">234</span></div></div><div><div class="alloc-row"><span class="alloc-label">USDT ledger entries</span><span class="alloc-value" id="ustLedger">105</span></div></div></div></div><div style="height:20px"></div>
@@ -118,10 +118,20 @@ function renderActivePositions(d){
   const rate=p=>p.rate_daily==null?'—':(Number(p.rate_daily)*36500).toFixed(2)+'%';
   const date=v=>v?new Date(v).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}):'—';
   const total=detailAvailable?positions.reduce((sum,p)=>sum+Number(p.amount||0),0):Number((d.snapshots?.USD?.at(-1)||{}).credits_out||0);
+  // 分幣別統計：USD 與 USDT 不相加（錢包卡是 USD，故 Active funding 也以 USD 為主）
+  const _isUSD=x=>String((x&&x.asset)||'').toUpperCase()==='USD';
+  const _sum=a=>a.reduce((s,x)=>s+Number((x&&x.amount)||0),0);
+  const usdPos=positions.filter(_isUSD), ustPos=positions.filter(x=>!_isUSD(x));
+  const usdOff=(offersAvailable?offers:[]).filter(_isUSD);
+  const totalUsd=detailAvailable?_sum(usdPos):Number(total||0);
+  const totalUst=detailAvailable?_sum(ustPos):0;
   const activeMetric=document.querySelector('#metricActive');
-  if(activeMetric)activeMetric.textContent='$'+fmt(total);
+  if(activeMetric)activeMetric.textContent='$'+fmt(totalUsd);
   const activeSub=document.querySelector('#metricActiveSub');
-  if(activeSub)activeSub.textContent=detailAvailable?positions.length+' active position'+(positions.length===1?'':'s'):'active detail unavailable';
+  if(activeSub)activeSub.textContent=detailAvailable?(ustPos.length>0?('USD '+usdPos.length+' · USDT '+ustPos.length+(totalUst>0?' ($'+fmt(totalUst)+')':'')):(usdPos.length+' active position'+(usdPos.length===1?'':'s'))):'active detail unavailable';
+  const _wUst=Number((((d.snapshots||{}).USDT||[]).slice(-1)[0]||{}).wallet_balance||0);
+  const _wSub=document.querySelector('#metricWalletSub');
+  if(_wSub&&_wUst>0)_wSub.textContent='USD funding wallet · USDT $'+fmt(_wUst);
   const remaining=document.querySelector('#metricRemaining');
   const remainingSub=document.querySelector('#metricRemainingSub');
   if(remaining){if(!detailAvailable){remaining.textContent='—';if(remainingSub)remainingSub.textContent='individual lifecycle detail unavailable';}else if(positions.length===1){remaining.textContent=positions[0].remaining_label||'—';if(remainingSub)remainingSub.textContent='individual lifecycle';}else{remaining.textContent='MULTIPLE';if(remainingSub)remainingSub.textContent=positions.length+' individual lifecycles below';}}
@@ -134,7 +144,7 @@ function renderActivePositions(d){
   // Capital allocation 用同一份資料算，避免各區數字對不上
   const _wallet=Number((((d.snapshots||{}).USD||[]).slice(-1)[0]||{}).wallet_balance||0);
   const _cred=Number(total||0);
-  const _off=offersAvailable?offers.reduce((s,x)=>s+Number(x.amount||0),0):0;
+  const _off=offersAvailable?_sum(usdOff):0;
   const _cash=Math.max(0,_wallet-_cred-_off);
   const _util=_wallet>0?(_cred+_off)/_wallet*100:0;
   const _setAlloc=(id,txt,pct)=>{const el=document.querySelector(id);if(!el)return;el.textContent=txt;const row=el.closest('.alloc-row');const bar=row&&row.parentElement.querySelector('.bar i');if(bar)bar.style.width=Math.max(0,Math.min(100,pct))+'%';};
