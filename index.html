@@ -136,7 +136,7 @@ function renderEarnings(daily){
   set('#earn30','+$'+sum30.toFixed(2));
   set('#earnGross','$'+gross.toFixed(2));
   set('#earnFee','\u2212$'+fee.toFixed(2));
-  set('#earnRangeLabel','LAST '+earnDays+' LEDGER DAYS');
+  set('#earnRangeLabel','LAST '+rows.length+' LEDGER DAYS');
 }
 document.addEventListener('click',e=>{
   const b=e.target.closest('.earn-range'); if(!b)return;

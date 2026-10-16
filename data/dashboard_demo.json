@@ -123,6 +123,102 @@
       "usd_net": 0.044,
       "ust_net": 0.019,
       "entries": 1
+    },
+    {
+      "date": "2026-01-15",
+      "usd_net": 0.02,
+      "ust_net": 0.022,
+      "entries": 1
+    },
+    {
+      "date": "2026-01-16",
+      "usd_net": 0.024,
+      "ust_net": 0.01,
+      "entries": 8
+    },
+    {
+      "date": "2026-01-17",
+      "usd_net": 0.028,
+      "ust_net": 0.013,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-18",
+      "usd_net": 0.032,
+      "ust_net": 0.016,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-19",
+      "usd_net": 0.036,
+      "ust_net": 0.019,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-20",
+      "usd_net": 0.04,
+      "ust_net": 0.022,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-21",
+      "usd_net": 0.044,
+      "ust_net": 0.01,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-22",
+      "usd_net": 0.02,
+      "ust_net": 0.013,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-23",
+      "usd_net": 0.024,
+      "ust_net": 0.016,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-24",
+      "usd_net": 0.028,
+      "ust_net": 0.019,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-25",
+      "usd_net": 0.032,
+      "ust_net": 0.022,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-26",
+      "usd_net": 0.036,
+      "ust_net": 0.01,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-27",
+      "usd_net": 0.04,
+      "ust_net": 0.013,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-28",
+      "usd_net": 0.044,
+      "ust_net": 0.016,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-29",
+      "usd_net": 0.02,
+      "ust_net": 0.019,
+      "entries": 2
+    },
+    {
+      "date": "2026-01-30",
+      "usd_net": 0.024,
+      "ust_net": 0.022,
+      "entries": 2
     }
   ],
   "snapshots": {
