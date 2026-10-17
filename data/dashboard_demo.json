@@ -2086,6 +2086,14 @@
         "available_cash": 12.0,
         "credits_out": 1004.45,
         "funding_symbol": "FUSD"
+      },
+      {
+        "date": "2026-08-22",
+        "ts_ms": 1787356800000,
+        "wallet_balance": 1018.8,
+        "available_cash": 12.75,
+        "credits_out": 1006.05,
+        "funding_symbol": "FUSD"
       }
     ],
     "USDT": [
@@ -3236,7 +3244,7 @@
       "asset": "USD",
       "symbol": "fUSD",
       "kind": "offer",
-      "amount": 19.45,
+      "amount": 21.05,
       "status": "OPEN",
       "rate_daily": 0.00024,
       "period_days": 30
