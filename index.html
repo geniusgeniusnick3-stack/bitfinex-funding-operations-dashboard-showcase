@@ -12,7 +12,8 @@
 .earn-range.active{color:var(--text);border-color:var(--blue)}
 .market-list{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .market-col{min-width:0}
-.market-name{font:11px var(--mono);color:var(--blue);margin-bottom:10px;letter-spacing:.04em}
+.market-name{font:12px var(--mono);color:var(--blue);margin-bottom:10px;letter-spacing:.04em;border-bottom:1px solid var(--line);padding-bottom:8px;display:flex;justify-content:space-between;align-items:baseline}
+.market-name .mine-tag{font:10px var(--mono);color:var(--green)}
 .market-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line2);font:11px var(--mono);color:var(--muted)}
 .market-row span:last-child{color:var(--text)}
 .market-row span.up{color:var(--green)}
@@ -190,6 +191,7 @@ function renderMarket(d){
     if(!ps.length||!tot)return null;
     return ps.reduce((s,p)=>s+Number(p.amount||0)*Number(p.rate_daily||0),0)/tot*365*100;};
   const row=(label,val,cls)=>'<div class="market-row"><span>'+label+'</span><span class="'+(cls||'')+'">'+val+'</span></div>';
+  const mineTag=L('\u25c0 your position','\u25c0 你的部位','\u25c0 你的仓位');
   const cards=[['fUSD',L('USD funding market','USD 放貸市場','USD 放贷市场')],
                ['fUST',L('USDT funding market','USDT 放貸市場','USDT 放贷市场')]];
   const html=cards.map(([sym,label])=>{
@@ -203,7 +205,8 @@ function renderMarket(d){
            : v.utilisation_pct>=85 ? L('Market fairly tight — most capital is lent out.','市場偏緊，多數資金都借出去了。','市场偏紧，多数资金都借出去了。')
            : L('Market oversupplied — about '+idle.toFixed(1)+'% of lender capital cannot find a borrower.','市場供過於求：約 '+idle.toFixed(1)+'% 的放貸資金借不出去。','市场供过于求：约 '+idle.toFixed(1)+'% 的放贷资金借不出去。');
     }
-    return '<div class="market-col"><div class="market-name">'+label+'</div>'
+    const hasPos=pos.some(p=>p.symbol===sym);
+    return '<div class="market-col"><div class="market-name"><span>'+label+'</span>'+(hasPos?'<span class="mine-tag">'+mineTag+'</span>':'')+'</div>'
       + row(L('Market FRR (annualised)','市場 FRR（年化）','市场 FRR（年化）'), v.frr_apr_pct!=null?v.frr_apr_pct.toFixed(2)+'%':'—')
       + row(L('My filled rate (weighted)','我的成交利率（加權）','我的成交利率（加权）'), mine!=null?mine.toFixed(2)+'%':'—')
       + (delta!=null?row(L('Difference vs market','與市場差距','与市场差距'),(delta>=0?'+':'')+delta.toFixed(2)+'%',delta>=0?'up':'amber'):'')
