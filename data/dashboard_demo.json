@@ -3982,29 +3982,29 @@
   ],
   "market": {
     "fUSD": {
-      "as_of_utc": "2026-10-18T12:05:00+00:00",
+      "as_of_utc": "2026-10-18T15:05:00+00:00",
       "frr_apr_pct": 10.92,
       "frr_daily_pct": 0.0001,
       "frr_24h_min_pct": 10.92,
       "frr_24h_max_pct": 11.06,
-      "avg_period_days": 78.23,
-      "provided": 5915019983.855189,
-      "used": 5858174965.418622,
+      "avg_period_days": 77.64,
+      "provided": 5912246527.990909,
+      "used": 5855952333.172759,
       "utilisation_pct": 99.0,
-      "below_threshold": 410719231.6950456,
+      "below_threshold": 410019084.96365505,
       "samples": 168
     },
     "fUST": {
-      "as_of_utc": "2026-10-18T12:05:00+00:00",
+      "as_of_utc": "2026-10-18T15:05:00+00:00",
       "frr_apr_pct": 9.99,
       "frr_daily_pct": 0.0001,
       "frr_24h_min_pct": 9.99,
-      "frr_24h_max_pct": 9.99,
-      "avg_period_days": 72.06,
-      "provided": 481169155.19059676,
-      "used": 376519427.87644976,
+      "frr_24h_max_pct": 10.13,
+      "avg_period_days": 72.0,
+      "provided": 482530780.0035047,
+      "used": 377779949.49418825,
       "utilisation_pct": 78.3,
-      "below_threshold": 114933490.17379022,
+      "below_threshold": 118619959.46150687,
       "samples": 168
     }
   }

@@ -185,19 +185,12 @@ function renderMarket(d){
   const m=(d&&d.market)||{};
   const L=(en,zh,cn)=>current==='zh-TW'?zh:(current==='zh-CN'?cn:en);
   const pos=Array.isArray(d&&d.active_positions)?d.active_positions:[];
-  // 我的成交利率＝以金額加權的平均日利率（與別家算法一致）
-  const myRate=sym=>{const ps=pos.filter(p=>p.symbol===sym);
-    const tot=ps.reduce((s,p)=>s+Number(p.amount||0),0);
-    if(!ps.length||!tot)return null;
-    return ps.reduce((s,p)=>s+Number(p.amount||0)*Number(p.rate_daily||0),0)/tot*365*100;};
   const row=(label,val,cls)=>'<div class="market-row"><span>'+label+'</span><span class="'+(cls||'')+'">'+val+'</span></div>';
   const mineTag=L('\u25c0 your position','\u25c0 你的部位','\u25c0 你的仓位');
   const cards=[['fUSD',L('USD funding market','USD 放貸市場','USD 放贷市场')],
                ['fUST',L('USDT funding market','USDT 放貸市場','USDT 放贷市场')]];
   const html=cards.map(([sym,label])=>{
     const v=m[sym]; if(!v)return '';
-    const mine=myRate(sym);
-    const delta=(mine!=null&&v.frr_apr_pct!=null)?mine-v.frr_apr_pct:null;
     let note='';
     if(v.utilisation_pct!=null){
       const idle=100-v.utilisation_pct;
@@ -208,8 +201,6 @@ function renderMarket(d){
     const hasPos=pos.some(p=>p.symbol===sym);
     return '<div class="market-col"><div class="market-name"><span>'+label+'</span>'+(hasPos?'<span class="mine-tag">'+mineTag+'</span>':'')+'</div>'
       + row(L('Market FRR (annualised)','市場 FRR（年化）','市场 FRR（年化）'), v.frr_apr_pct!=null?v.frr_apr_pct.toFixed(2)+'%':'—')
-      + row(L('My filled rate (weighted)','我的成交利率（加權）','我的成交利率（加权）'), mine!=null?mine.toFixed(2)+'%':'—')
-      + (delta!=null?row(L('Difference vs market','與市場差距','与市场差距'),(delta>=0?'+':'')+delta.toFixed(2)+'%',delta>=0?'up':'amber'):'')
       + row(L('Market average period','市場平均放貸期限'), v.avg_period_days!=null?v.avg_period_days.toFixed(0)+L(' days',' 天',' 天'):'—')
       + row(L('Market utilisation','市場資金利用率'), v.utilisation_pct!=null?v.utilisation_pct.toFixed(1)+'%':'—')
       + (note?'<div class="market-note">'+note+'</div>':'')
