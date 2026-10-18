@@ -2094,6 +2094,14 @@
         "available_cash": 12.75,
         "credits_out": 1006.05,
         "funding_symbol": "FUSD"
+      },
+      {
+        "date": "2026-08-23",
+        "ts_ms": 1787443200000,
+        "wallet_balance": 1000.0,
+        "available_cash": 13.5,
+        "credits_out": 986.5,
+        "funding_symbol": "FUSD"
       }
     ],
     "USDT": [
@@ -3244,7 +3252,7 @@
       "asset": "USD",
       "symbol": "fUSD",
       "kind": "offer",
-      "amount": 21.05,
+      "amount": 1.5,
       "status": "OPEN",
       "rate_daily": 0.00024,
       "period_days": 30
@@ -3372,604 +3380,632 @@
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 23:57:13,970",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:57:14,157",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:57:13,970",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:57:14,157",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:57:13,491",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:57:13,870",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:57:12,663",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:57:13,397",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:52:13,201",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:52:13,708",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:52:13,200",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:52:13,708",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:52:12,706",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:52:13,381",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:52:12,227",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:52:12,912",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:47:14,353",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:47:13,850",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:47:14,353",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:47:13,850",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:47:13,877",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:47:13,477",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:47:13,023",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:47:12,983",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:42:12,976",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 23:42:12,975",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 23:42:12,694",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 23:42:12,214",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 23:37:11,479",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:42:12,155",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 23:32:12,976",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:37:13,739",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:32:12,976",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:37:13,739",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:32:12,734",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:37:13,466",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:32:12,226",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:37:12,950",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:27:11,470",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:32:13,899",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:32:13,899",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:32:13,414",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:32:12,935",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:27:12,150",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 23:22:13,652",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:22:14,864",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:22:13,651",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:22:14,863",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:22:13,155",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:22:14,587",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:22:12,659",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:22:14,100",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:17:11,471",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 23:17:14,084",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:17:14,084",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:17:13,817",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:17:12,933",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:12:13,726",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:12:13,725",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:12:13,414",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:12:12,917",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:07:13,751",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:07:13,751",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:07:13,492",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:07:12,941",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:02:13,950",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:02:13,949",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:02:13,456",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 23:02:12,979",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:57:14,243",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:57:14,243",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:57:13,751",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:57:13,278",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:52:12,152",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 23:12:13,057",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:47:13,676",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:12:13,057",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:47:13,676",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:12:12,797",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:47:13,182",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:12:12,247",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:47:12,701",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:07:11,472",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:42:14,043",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:42:14,043",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:42:13,413",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:42:12,907",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:37:13,656",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:37:13,656",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "SWITCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:37:13,374",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:37:12,900",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "WALLET_MATCH",
+      "level": "WARNING"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:33:13,122",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 23:02:13,329",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:32:23,834",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "TG",
+      "level": "ERROR"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:32:14,130",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "TG",
+      "level": "ERROR"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:32:13,851",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:02:13,329",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:32:13,850",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:02:12,779",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:32:13,350",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 23:02:12,258",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:32:12,873",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:57:11,475",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:31:53,386",
+      "source": "usd__2026-10-18_00-00-00.log",
+      "tag": "TG",
+      "level": "ERROR"
+    },
+    {
+      "timestamp_local": "2026-10-17 22:27:12,093",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 22:52:12,826",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:22:13,604",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:52:12,826",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:22:13,603",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:52:12,553",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:22:13,304",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:52:12,061",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:22:12,831",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:47:11,476",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:17:12,101",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 22:42:13,497",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:12:14,366",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:42:13,497",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:12:14,366",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:42:13,190",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:12:14,075",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:42:12,708",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:12:13,596",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:37:11,480",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:07:12,104",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 22:32:13,040",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:02:13,743",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:32:13,039",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:02:13,742",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:32:12,755",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:02:13,320",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:32:12,280",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 22:02:12,838",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:27:11,481",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:57:12,106",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 22:22:13,405",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:52:13,676",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:22:13,405",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:52:13,676",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:22:13,109",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:52:13,362",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:22:12,278",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:52:12,873",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:17:13,610",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:17:13,610",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:17:13,139",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:17:12,633",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:12:11,491",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:47:12,106",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 22:07:13,142",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:42:13,640",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:07:13,142",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:42:13,640",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:07:12,855",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:42:13,320",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:07:12,311",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:42:12,850",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 22:02:13,188",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:02:13,188",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:02:12,906",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 22:02:12,439",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:57:13,630",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:57:13,630",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:57:13,154",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:57:12,649",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:52:13,053",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:52:13,052",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:52:12,766",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:52:12,290",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:47:13,364",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:47:13,364",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:47:12,694",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:47:12,220",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:42:11,478",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:37:12,109",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "GATE",
       "level": "INFO"
     },
     {
-      "timestamp_local": "2026-10-16 21:37:13,379",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:32:13,709",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:37:13,379",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:32:13,709",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:37:12,785",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:32:13,433",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:37:12,315",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:32:12,955",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:32:13,525",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:27:14,106",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:32:13,525",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:27:14,106",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "SWITCH",
       "level": "WARNING"
     },
     {
-      "timestamp_local": "2026-10-16 21:32:12,833",
-      "source": "usd__2026-10-17_00-00-00.log",
+      "timestamp_local": "2026-10-17 21:27:13,799",
+      "source": "usd__2026-10-18_00-00-00.log",
       "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:32:12,360",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:27:15,365",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:27:15,365",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:27:15,009",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:27:12,739",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:22:13,408",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:22:13,408",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:22:13,141",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:22:12,646",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "WALLET_MATCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:17:13,125",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
-      "level": "WARNING"
-    },
-    {
-      "timestamp_local": "2026-10-16 21:17:13,125",
-      "source": "usd__2026-10-17_00-00-00.log",
-      "tag": "SWITCH",
       "level": "WARNING"
     }
-  ]
+  ],
+  "market": {
+    "fUSD": {
+      "as_of_utc": "2026-10-18T11:05:00+00:00",
+      "frr_apr_pct": 10.92,
+      "frr_daily_pct": 0.0001,
+      "frr_24h_min_pct": 10.92,
+      "frr_24h_max_pct": 11.06,
+      "avg_period_days": 78.12,
+      "provided": 5915539799.662981,
+      "used": 5859106640.055731,
+      "utilisation_pct": 99.0,
+      "below_threshold": 409364867.52872425,
+      "samples": 168
+    },
+    "fUST": {
+      "as_of_utc": "2026-10-18T11:05:00+00:00",
+      "frr_apr_pct": 9.99,
+      "frr_daily_pct": 0.0001,
+      "frr_24h_min_pct": 9.99,
+      "frr_24h_max_pct": 9.99,
+      "avg_period_days": 72.01,
+      "provided": 481412911.7041819,
+      "used": 376699170.12843674,
+      "utilisation_pct": 78.2,
+      "below_threshold": 114408726.65107936,
+      "samples": 168
+    }
+  }
 }
